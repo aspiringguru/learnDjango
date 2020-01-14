@@ -1,3 +1,50 @@
 
+https://github.com/aspiringguru/learnDjango
+
+https://consideratecode.com/2018/05/02/django-2-0-url-to-path-cheatsheet/
 
 https://docs.djangoproject.com/en/2.2/intro/install/
+we only want version 2.2.x
+
+
+
+python3 -m venv venv
+source venv/bin/activate
+
+
+pip install python-dotenv
+pip install yolk3k
+yolk -V django
+
+pip install django==2.2.9
+
+
+https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+python -m django --version
+
+which django-admin
+django-admin --version
+
+#this creates a project, one project per website.
+django-admin startproject mysite
+
+cd mysite
+pwd
+#/blah...../learnDjango/mysite
+python manage.py runserver
+
+http://localhost:8000/
+
+[screenshot django installed]
+
+python manage.py runserver 0:5500
+#shorthand for 0.0.0.0 allows connection from anywhere. insecure.
+python manage.py runserver 5500
+#better since can only connect from local machine(?), or via nginx
+
+#using this since my local nginx config maps my tbxdata.com to local port 5500
+#my nginx also has certs and http auto redirect to https
+https://tbxdata.com/
+
+#this creates app 'polls', can have multiple apps within a website (project)
+python manage.py startapp polls
