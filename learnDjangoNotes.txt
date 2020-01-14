@@ -164,5 +164,12 @@ login using the username and password above
 
 
 #add class Question to polls/admin.py file.
-#server automatically restarts 
+#server automatically restarts
 [Class_Question_added_2_admin_py.png]
+
+
+[end part 2 tutorial]
+[git commit > https://github.com/aspiringguru/learnDjango/commit/03f8daf2ce3df1123f8ea133f8d6f8245d48e88a]
+
+[set part 3]
+https://docs.djangoproject.com/en/2.2/intro/tutorial03/
