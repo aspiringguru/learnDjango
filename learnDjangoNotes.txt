@@ -48,3 +48,40 @@ https://tbxdata.com/
 
 #this creates app 'polls', can have multiple apps within a website (project)
 python manage.py startapp polls
+
+#-------------------------------------------------------------------------------
+#update .gitignore and clear directory that should not be in repo
+git rm -r --cached  mysite/mysite/__pycache__/
+git commit -m 'Remove the now ignored directory "__pycache__"'
+git push
+#-------------------------------------------------------------------------------
+[tree_create_app1.png]
+
+polls/views.py
+
+polls/urls.py
+
+
+nb: need to import path & include
+
+python manage.py migrate
+python manage.py runserver 5500
+#nb if we go to this url, will get the error below.
+https://tbxdata.com/
+[polls_route_error1.png]
+#-------------------------------------------------------------------------------
+Using the URLconf defined in mysite.urls, Django tried these URL patterns, in this order:
+
+polls/
+admin/
+The empty path didn't match any of these.
+#-------------------------------------------------------------------------------
+https://tbxdata.com/polls/
+this url works.
+[polls_route_error1.png]
+#-------------------------------------------------------------------------------
+
+#end https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+
+#start https://docs.djangoproject.com/en/2.2/intro/tutorial02/
+[got commit = ]
