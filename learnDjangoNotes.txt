@@ -7,7 +7,8 @@ https://docs.djangoproject.com/en/2.2/intro/install/
 we only want version 2.2.x
 
 
-
+conda deactivate
+deactivate
 python3 -m venv venv
 source venv/bin/activate
 
@@ -173,3 +174,27 @@ login using the username and password above
 
 [set part 3]
 https://docs.djangoproject.com/en/2.2/intro/tutorial03/
+cd /mnt/f/2020_working/coding/learnDjango/
+conda deactivate
+source venv/bin/activate
+cd mysite
+python manage.py runserver 5500
+
+
+#minor experiment.
+add to polls/models.py
+question_prompt = models.CharField(max_length=200)
+
+python manage.py makemigrations polls
+[add_non_nullable_field_question_during_migration.png]
+#we need to set a default. ie
+question_prompt = models.CharField(max_length=200, default='')
+
+python manage.py makemigrations polls
+#nb polls/migrations now contains 0002_question_question_prompt.py
+#nbb: appname/migrations filename format is xxxx_class-name_new-field-name.py
+python manage.py sqlmigrate polls 0002
+[unapplied_migration_warning.png]
+python manage.py migrate
+[applying_migrations]
+python manage.py runserver 0:5500
