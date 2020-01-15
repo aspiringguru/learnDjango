@@ -241,3 +241,8 @@ add template.
 add namespace in template, but leave out from urls.py
 [part3_NoReverseMatch_not_a_registered_namespace.png]
 add the namespace to polls then error goes away.
+
+end part 3
+[https://github.com/aspiringguru/learnDjango/commit/a1afddc9088e989d4b7c356988088bb29d2300a4]
+
+start part 4
