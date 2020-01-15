@@ -22,6 +22,8 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ('question_text', 'pub_date', 'was_published_recently')
     list_filter = ['pub_date']
     #list_filter adds filter to select any/today/7 days/month/year
+    search_fields = ['question_text']
+    #https://docs.djangoproject.com/en/2.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields
 
 admin.site.register(Question, QuestionAdmin)
 #admin.site.register(Choice)

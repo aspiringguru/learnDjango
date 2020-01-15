@@ -385,3 +385,21 @@ class QuestionAdmin(admin.ModelAdmin):
 
 [part7_Adding_related_objects_in_form.png]
 [part7_admin.TabularInline.png]
+[part7_filter_added.png]
+[part7_search_added.png]
+
+#
+$ python -c "import django; print(django.__path__)"
+['/mnt/f/2020_working/coding/learnDjango/venv/lib/python3.6/site-packages/django']
+
+cd /mnt/f/2020_working/coding/learnDjango/venv/lib/python3.6/site-packages/django
+cp contrib/admin/templates/admin/base_site.html /mnt/f/2020_working/coding/learnDjango/mysite/templates/admin/
+cd /mnt/f/2020_working/coding/learnDjango/mysite/templates/admin/
+
+ls /mnt/f/2020_working/coding/learnDjango/venv/lib/python3.6/site-packages/django/contrib/admin/templates/admin/
+cd /mnt/f/2020_working/coding/learnDjango/mysite/templates/admin/
+cp /mnt/f/2020_working/coding/learnDjango/venv/lib/python3.6/site-packages/django/contrib/admin/templates/admin/base.html .
+
+[part7_copy_&_edit_base_templates.png]
+
+end part 7
