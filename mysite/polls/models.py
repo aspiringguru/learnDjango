@@ -13,11 +13,12 @@ class Question(models.Model):
         return self.question_text
     def was_published_recently(self):
         now = timezone.now()
-        #print("class Question > was_published_recently : now", now)
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
-        #return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
-    def my_dumb_method(self):
-        return "this is my dumb method."
+    #these was_published_recently.foobar lines enable sorting in web page (part7
+    #refer https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
+    was_published_recently.admin_order_field = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
 
 
 class Choice(models.Model):

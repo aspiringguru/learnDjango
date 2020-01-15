@@ -384,3 +384,4 @@ class QuestionAdmin(admin.ModelAdmin):
 
 
 [part7_Adding_related_objects_in_form.png]
+[part7_admin.TabularInline.png]
