@@ -237,3 +237,7 @@ error for missing template.
 add template.
 
 [part3_sample_404_error.png]
+
+add namespace in template, but leave out from urls.py
+[part3_NoReverseMatch_not_a_registered_namespace.png]
+add the namespace to polls then error goes away.
