@@ -227,5 +227,13 @@ mysite\polls\templates\polls\index.html
 pre index.html
 [part3_basic_index_request.png]
 
-after index.html
+after index.html and update polls/views.py to use the index.html template.
 [part3_after_adding_template_index.png]
+
+
+update view and reference template at  polls/templates/polls/detail.html
+[part3_template_does_note_exist.png]
+error for missing template.
+add template.
+
+[part3_sample_404_error.png]
