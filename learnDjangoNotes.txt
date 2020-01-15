@@ -212,5 +212,20 @@ https://docs.djangoproject.com/en/2.2/intro/tutorial03/
 [https://github.com/aspiringguru/learnDjango/commit/7d5a5ca67155fafcce7efaa6826b1ecd1b523846]
 
 
-nb: edit files polls/urls.py and polls/views.py do not need to migrat.
+nb: edit files polls/urls.py and polls/views.py do not need to migrate.
 django server in dev mode auto updates.
+
+added views to polls/views.py & routes to  polls.urls
+
+[https://github.com/aspiringguru/learnDjango/commit/aef622c6bdedb9424b6aa69c704e7686209a524a]
+
+now update views for more functionality
+
+create dir structure and file
+mysite\polls\templates\polls\index.html
+
+pre index.html
+[part3_basic_index_request.png]
+
+after index.html
+[part3_after_adding_template_index.png]
