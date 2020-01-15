@@ -198,3 +198,19 @@ python manage.py sqlmigrate polls 0002
 python manage.py migrate
 [applying_migrations]
 python manage.py runserver 0:5500
+
+delete the above addition to polls/models.py
+python manage.py makemigrations polls
+ls polls/migrations
+python manage.py sqlmigrate polls 0003
+python manage.py migrate
+python manage.py runserver 0:5500
+[web_page_recent_actions_shown.png]
+
+start material in part 3
+https://docs.djangoproject.com/en/2.2/intro/tutorial03/
+[https://github.com/aspiringguru/learnDjango/commit/7d5a5ca67155fafcce7efaa6826b1ecd1b523846]
+
+
+nb: edit files polls/urls.py and polls/views.py do not need to migrat.
+django server in dev mode auto updates.
