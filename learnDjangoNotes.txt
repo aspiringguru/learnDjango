@@ -371,3 +371,16 @@ end part 6
 start part 7
 
 https://docs.djangoproject.com/en/2.2/intro/tutorial07/
+
+added this to polls/admin.py, swap lines to change order of form elements.
+#------------------------------------------------
+class QuestionAdmin(admin.ModelAdmin):
+    #fields = ['pub_date', 'question_text']
+    fields = ['question_text', 'pub_date']
+#------------------------------------------------
+
+[part7_change_question_order.png]
+[part7_change_question_order_2.png]
+
+
+[part7_Adding_related_objects_in_form.png]
