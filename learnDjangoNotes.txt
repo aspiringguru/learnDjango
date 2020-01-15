@@ -355,3 +355,19 @@ QuestionDetailViewTests - 2 tests
 
 end part 5, complete all tests.
 [part5_final_Test_results.png]
+[https://github.com/aspiringguru/learnDjango/commit/8d266b8e7acf5891f127ebf3f4c6f20d7e111a22]
+
+start part 6
+
+#some guys git repo that appears to work ok.
+https://github.com/cdubz/first-django-app
+
+python manage.py runserver 0.0.0.0:5500
+#may have a caching issue.
+http://localhost:5500/polls/
+http://localhost:5500/static/polls/style.css
+
+end part 6
+start part 7
+
+https://docs.djangoproject.com/en/2.2/intro/tutorial07/
